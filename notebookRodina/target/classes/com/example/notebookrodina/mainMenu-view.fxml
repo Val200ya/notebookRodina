@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FCE883;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notebookrodina.NotebookController">
+   <children>
+      <Label layoutX="92.0" layoutY="60.0" text="Здравствуйте,">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="122.0" layoutY="82.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="noteTextField" layoutX="48.0" layoutY="157.0" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: #fad525;">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.4848484992980957" />
+               </color>
+            </InnerShadow>
+         </effect></TextField>
+      <Button fx:id="addButton" layoutX="30.0" layoutY="246.0" mnemonicParsing="false" onAction="#addButtonClick" style="-fx-background-color: #fad525;" text="Добавить">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0">
+               <color>
+                  <Color opacity="0.4761904776096344" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="deleteButton" layoutX="196.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteButtonClick" style="-fx-background-color: #fad525;" text="Удалить">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0">
+               <color>
+                  <Color opacity="0.4848484992980957" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <ListView fx:id="notesListView" layoutX="300.0" layoutY="25.0" prefHeight="351.0" prefWidth="274.0" style="-fx-background-color: #fdefb0;">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.48051947355270386" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ListView>
+   </children>
+</AnchorPane>
